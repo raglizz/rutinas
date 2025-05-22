@@ -1,9 +1,11 @@
 services:
   - type: web
     name: rutinas
-    runtime: docker
-    region: oregon
+    env: docker
     plan: free
+    buildCommand: ""
+    startCommand: ""
+    dockerfilePath: Dockerfile
     envVars:
       - key: PORT
-        value: 8080
+        value: 9090

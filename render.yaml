@@ -1,11 +1,9 @@
 services:
   - type: web
     name: rutinas
-    env: java
+    runtime: docker
     region: oregon
     plan: free
-    buildCommand: "./mvnw clean package -DskipTests"
-    startCommand: "java -jar target/rutinas-0.0.1-SNAPSHOT.jar"
     envVars:
       - key: PORT
-        value: 9090  # Render lo ignora, pero lo ponemos como placeholder
+        value: 8080

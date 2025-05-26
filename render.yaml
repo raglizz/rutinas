@@ -12,9 +12,11 @@ services:
         value: user
       - key: SPRING_DATASOURCE_PASSWORD
         value: 1234
+    dependsOn:
+      - mysql-rutinas
 
   - type: web
-    name: mysql-rutinas_db
+    name: mysql-rutinas
     env: docker
     plan: free
     dockerfilePath: mysql.Dockerfile
@@ -29,3 +31,4 @@ services:
         value: user
       - key: MYSQL_PASSWORD
         value: 1234
+  

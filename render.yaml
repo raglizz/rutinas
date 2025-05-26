@@ -14,7 +14,7 @@ services:
         value: 1234
 
   - type: web
-    name: mysql-rutinas
+    name: mysql-rutinas_db
     env: docker
     plan: free
     dockerfilePath: mysql.Dockerfile

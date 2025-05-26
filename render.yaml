@@ -5,3 +5,18 @@ services:
     plan: free
     dockerfilePath: Dockerfile
     region: oregon
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://mysql-rutinas:3306/rutinas_db
+      - key: SPRING_DATASOURCE_USERNAME
+        value: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: 1234
+
+  - type: private
+    name: mysql-rutinas
+    env: docker
+    plan: free
+    dockerfilePath: mysql.Dockerfile
+    region: oregon
+    autoDeploy: false

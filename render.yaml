@@ -12,6 +12,9 @@ services:
         value: user
       - key: SPRING_DATASOURCE_PASSWORD
         value: 1234
+        ports:
+      - 9090
+
 
   - type: web
     name: mysql-rutinas

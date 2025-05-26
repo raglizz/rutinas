@@ -3,9 +3,5 @@ services:
     name: rutinas
     env: docker
     plan: free
-    buildCommand: ""
-    startCommand: ""
     dockerfilePath: Dockerfile
-    envVars:
-      - key: PORT
-        value: 9090
+    region: oregon

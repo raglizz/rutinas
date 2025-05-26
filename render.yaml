@@ -12,11 +12,11 @@ services:
         value: user
       - key: SPRING_DATASOURCE_PASSWORD
         value: 1234
-      - key: SERVER_PORT
-        value: "9090"  # Asegúrate de que esto esté configurado
     ports:
-      - 9090  
+      - 9090   # Puerto donde tu aplicación Spring escucha
 
+
+services:
   - type: web
     name: mysql-rutinas_db
     env: docker
@@ -33,3 +33,5 @@ services:
         value: user
       - key: MYSQL_PASSWORD
         value: 1234
+    ports:
+      - 3306   # Puerto donde MySQL está escuchando

@@ -12,8 +12,6 @@ services:
         value: user
       - key: SPRING_DATASOURCE_PASSWORD
         value: 1234
-    dependsOn:
-      - mysql-rutinas
 
   - type: web
     name: mysql-rutinas
@@ -31,4 +29,3 @@ services:
         value: user
       - key: MYSQL_PASSWORD
         value: 1234
-  

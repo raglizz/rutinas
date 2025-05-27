@@ -7,7 +7,7 @@ services:
     region: oregon
     envVars:
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:mysql://mysql-rutinas:3306/rutinas_db
+        value: jdbc:mysql://mysql-rutinas.onrender.com:3306/rutinas_db
       - key: SPRING_DATASOURCE_USERNAME
         value: user
       - key: SPRING_DATASOURCE_PASSWORD

@@ -19,9 +19,8 @@ services:
   - type: web
     name: mysql-rutinas
     env: docker
-    plan: free
     dockerfilePath: mysql.Dockerfile
-    region: oregon
+    plan: free
     autoDeploy: false
     envVars:
       - key: MYSQL_ROOT_PASSWORD
@@ -32,3 +31,5 @@ services:
         value: user
       - key: MYSQL_PASSWORD
         value: 1234
+    ports:
+      - "3308:3306"
